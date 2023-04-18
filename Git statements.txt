@@ -1,0 +1,34 @@
+=== remove the setting for username ====
+git config --global --unset user.name
+git config --global --unset user.email
+git config --global --unset credential.username
+
+========== show list config ============
+
+git config --list
+
+============= add remote ===============
+
+git remote add origin url
+
+========== create new branch ===========
+
+git branch newBranch | git checkout -b myFeature dev
+
+============= merge code ===============
+
+git merge branch
+
+========== show all branch =============
+
+git branch -a
+
+========== show all branch =============
+
+- local: 
+
+	git branch -d branch-name
+
+- delete branch in local and remote:
+
+	git push origin -d branch-name
